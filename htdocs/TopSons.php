@@ -1,8 +1,18 @@
 <?php
+
+session_start();
+// check if the user is logged in
+if(isset($_SESSION['connection_user_name'])) {
+  // the user is logged in, display their user name
+  echo "Welcome, ".$_SESSION['connection_user_name'];
+} else {
+  // the user is not logged in, redirect to the login page
+  echo "va te log";
+  header("Location: login.php");
+  exit();
+}
+
 include('navbar.html');
-
-var_dump($user_id);
-
 ?>
 
 

@@ -1,6 +1,7 @@
 <?php
 require_once("traitement/database.php");
 
+
 if (isset($_POST['user_name'])) {
     // Sanitize and validate the user name
     $user_name = filter_var($_POST['user_name']);
@@ -23,7 +24,7 @@ if (isset($_POST['user_name'])) {
         $stmt = $conn->prepare($insertuser);
         $stmt->bindParam(':user_name', $user_name);
         $stmt->execute();
-        header('Location: TopSons.php');
+        header('Location: login.php');
     }
 }
 ?>
@@ -67,13 +68,6 @@ if (isset($_POST['user_name'])) {
 
         <hr class="form_separation">
         <h3 class="espace">login</h3>
-
-        <form method="post" action="connexion.php" enctype="multipart/form-data" class="login-form2 login-form">
-
-            <input type="text" name="connection_user_name" placeholder="Username">
-
-            <button type="submit">Login</button>
-        </form>
     </div>
     
     <!--FONTAWESOME SCRIPT-->
