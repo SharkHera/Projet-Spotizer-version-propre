@@ -21,14 +21,38 @@ session_start();
 
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
 
-<form method="post" action="login.php" enctype="multipart/form-data" class="login-form2 login-form">
+<!-- <form method="post" action="login.php" enctype="multipart/form-data" class="login-form2 login-form">
 
 <input type="text" name="connection_user_name" placeholder="Username">
 
 <button type="submit">Login</button>
-</form>
+</form> -->
 
 
+<div class="login-card">
+        <h2>Welcome on <span class="fancy">Spotizer</span></h2>
+        <h3>Login</h3>
 
+        <form method="post" action="login.php" enctype="multipart/form-data" class="login-form">
+
+            <input type="text" name="connection_user_name" placeholder="Username">
+            <button type="submit">Login</button>
+            
+        </form>
+
+    </div>
 

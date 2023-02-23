@@ -20,6 +20,7 @@ let Repeat = false;
 let Music = document.createElement("audio");
 
 
+
 // tout les sons de la liste dans un tableau
 
 let Tous_Les_Sons =[

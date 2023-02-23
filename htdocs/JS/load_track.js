@@ -52,7 +52,7 @@ function Range_slider () {
            BtnPlay.innerHTML = '<i class="fa-solid fa-play"></i>';
            if(Aleatoire == true) {
             if (Music_Auto == 1) {
-                Index.Math.random()*Tous_les_sons.length | 0;
+                Index.Math.random()*Tous_Les_Sons.length | 0;
                 load_track(Index);
                 Jouer_sons();
             }

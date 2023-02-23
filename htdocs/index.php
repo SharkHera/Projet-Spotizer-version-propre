@@ -43,6 +43,7 @@ if (isset($_POST['user_name'])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- FAVICON -->
     
+
     
     <title>Login Page</title>
     
@@ -67,7 +68,7 @@ if (isset($_POST['user_name'])) {
         </form>
 
         <hr class="form_separation">
-        <h3 class="espace">login</h3>
+        <h3 class="espace"><a href="login.php">Login</a></h3>
     </div>
     
     <!--FONTAWESOME SCRIPT-->
