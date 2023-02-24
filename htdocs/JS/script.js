@@ -59,6 +59,18 @@ let Tous_Les_Sons =[
         Lien_Image: "css/images/carro.jpg",
         Titre: "Un truc",
     
+    },
+    {
+        Nom_Artiste: "Marco",
+        Lien_Music: "audio/drilledition.mp3",
+        Lien_Image: "css/images/banger.png",
+        Titre: "Banger de Marco 1",
+    },
+    {
+        Nom_Artiste: "Marco",
+        Lien_Music: "audio/drilledition2.mp3",
+        Lien_Image: "css/images/banger2.png",
+        Titre: "Banger de Marco 2 <3",
     }
     
 ];
@@ -73,22 +85,31 @@ let Titre2 = document.querySelector(".Titre2");
 let Titre3 = document.querySelector(".Titre3");
 let Titre4 = document.querySelector(".Titre4");
 let Titre5 = document.querySelector(".Titre5");
+let Titre6 = document.querySelector(".Titre6");
+let Titre7 = document.querySelector(".Titre7");
+
 
 Titre1.innerHTML = Tous_Les_Sons[0].Titre;
 Titre2.innerHTML = Tous_Les_Sons[1].Titre;
 Titre3.innerHTML = Tous_Les_Sons[2].Titre;
 Titre4.innerHTML = Tous_Les_Sons[3].Titre;
 Titre5.innerHTML = Tous_Les_Sons[4].Titre;
+Titre6.innerHTML = Tous_Les_Sons[5].Titre;
+Titre7.innerHTML = Tous_Les_Sons[6].Titre;
 
 let Artiste1 = document.querySelector(".Artiste1")
 let Artiste2 = document.querySelector(".Artiste2")
 let Artiste3 = document.querySelector(".Artiste3")
 let Artiste4 = document.querySelector(".Artiste4")
 let Artiste5 = document.querySelector(".Artiste5")
+let Artiste6 = document.querySelector(".Artiste6")
+let Artiste7 = document.querySelector(".Artiste7")
+
 
 Artiste1.innerHTML = Tous_Les_Sons[0].Nom_Artiste;
 Artiste2.innerHTML = Tous_Les_Sons[1].Nom_Artiste;
 Artiste3.innerHTML = Tous_Les_Sons[2].Nom_Artiste;
 Artiste4.innerHTML = Tous_Les_Sons[3].Nom_Artiste;
 Artiste5.innerHTML = Tous_Les_Sons[4].Nom_Artiste;
-
+Artiste6.innerHTML = Tous_Les_Sons[5].Nom_Artiste;
+Artiste7.innerHTML = Tous_Les_Sons[6].Nom_Artiste;

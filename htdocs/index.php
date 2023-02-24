@@ -1,4 +1,5 @@
 <?php
+
 require_once("traitement/database.php");
 
 
@@ -17,7 +18,7 @@ if (isset($_POST['user_name'])) {
     $stmt->execute();
     $count = $stmt->rowCount();
     if ($count > 0) {
-        echo "<p class='erreur'>Ce pseudo n'est plus disponible</p>";
+        echo "<div class='erreur2'>Ce pseudo n'est plus disponible</div>";
     } else {
         // Insert the user name into the database
         $insertuser = "INSERT INTO user (user_name) VALUES (:user_name)";
@@ -45,7 +46,7 @@ if (isset($_POST['user_name'])) {
     
 
     
-    <title>Login Page</title>
+    <title>Register|Spotizer</title>
     
 </head>
 
@@ -53,22 +54,23 @@ if (isset($_POST['user_name'])) {
 
     <!-- CUSTOM CURSOR -->
     <div class="centre-img">
-        <img src="/css/images/Spotizer.png" alt="Logo Spotizer" class="logo">
+        <img src="css\images\Spotizer.png" alt="Logo Spotizer" class="logo">
     </div>
     <!-- LOGIN FORM -->
     <div class="login-card">
         <h2>Welcome on <span class="fancy">Spotizer</span></h2>
-        <h3>Sign in</h3>
+        <h3>Register</h3>
 
         <form method="post" action="index.php" enctype="multipart/form-data" class="login-form">
 
             <input type="text" name="user_name" placeholder="Username">
-            <button type="submit">Sign in</button>
+            <button type="submit">Register</button>
             
         </form>
-
-        <hr class="form_separation">
-        <h3 class="espace"><a href="login.php">Login</a></h3>
+        <h3>Already registered ?</h3>
+        <div class="back-to-register">
+           <a href="login.php"> <button class="register">Login</button></a>
+        </div>
     </div>
     
     <!--FONTAWESOME SCRIPT-->

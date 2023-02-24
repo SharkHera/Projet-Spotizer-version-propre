@@ -4,7 +4,7 @@ session_start();
 // check if the user is logged in
 if(isset($_SESSION['connection_user_name'])) {
   // the user is logged in, display their user name
-  echo "Welcome, ".$_SESSION['connection_user_name'];
+  // echo "Welcome, ".$_SESSION['connection_user_name'];
 } else {
   // the user is not logged in, redirect to the login page
   echo "va te log";
@@ -26,7 +26,7 @@ include('navbar.html');
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotizer</title>
-  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="css\custom.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -39,7 +39,7 @@ include('navbar.html');
     <div class="Top">
       <div class="Left">
         <div class="IMG">
-          <img src="/css/images/carro.jpg" alt="image artiste" class="Img_Artiste">
+          <img src="css/images/carro.jpg" alt="image artiste" class="Img_Artiste">
           <div class="Equiliser">
             <span></span>
             <span></span>
@@ -51,9 +51,11 @@ include('navbar.html');
         </div>
       </div>
       <div class="Right">
-        <div class="Parent_list">Playlist</h2>
-          <div class="BtnList">
-            <i class="fa-solid fa-list"></i>
+        <div class="centre-playlist">
+          <div class="Parent_list">Playlist</h2>
+            <div class="BtnList">
+              <i class="fa-solid fa-list"></i>
+            </div>
           </div>
         </div>
 
@@ -80,6 +82,34 @@ include('navbar.html');
                 <span class="Titre5">Titre</span>
                 <span class="Artiste5">Artiste</span>
               </li>
+              <li>
+                <span class="Titre6">Titre</span>
+                <span class="Artiste6">Artiste</span>
+              </li>
+              <li>
+                <span class="Titre7">Titre</span>
+                <span class="Artiste7">Artiste</span>
+              </li>
+              <li>
+                <span class="Titre1">Titre</span>
+                <span class="Artiste1">Artiste</span>
+              </li>
+              <li>
+                <span class="Titre1">Titre</span>
+                <span class="Artiste1">Artiste</span>
+              </li>
+              <li>
+                <span class="Titre1">Titre</span>
+                <span class="Artiste1">Artiste</span>
+              </li>
+              <li>
+                <span class="Titre1">Titre</span>
+                <span class="Artiste1">Artiste</span>
+              </li>
+              <li>
+                <span class="Titre1">Titre</span>
+                <span class="Artiste1">Artiste</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -97,7 +127,7 @@ include('navbar.html');
   <div class="Bottom">
     <div class="Info_Artist">
       <div class="Info_Img">
-        <img src="/css/images/carro.jpg" alt="Img Artiste 2" class="Img_Artiste2">
+        <img src="css/images/carro.jpg" alt="Img Artiste 2" class="Img_Artiste2">
       </div>
       <div class="Info_Details">
         <h4 id="Titre_Music">PlaceHolder</h4>
@@ -129,15 +159,16 @@ include('navbar.html');
   </div>
   </div>
 </body>
-<script src="/JS/script.js"></script>
-<script src="/JS/button_stop.js"></script>
-<script src="/JS/load_track.js"></script>
-<script src="/JS/jouer_sons.js"></script>
-<script src="/JS/next_song.js"></script>
-<script src="/JS/prev_song.js"></script>
-<script src="/JS/random.js"></script>
-<script src="/JS/stop_song.js"></script>
-<script src="/JS/volume.js"></script>
-<script src="/JS/repeatmusic.js"></script>
+
+<script src="JS/script.js"></script>
+<script src="JS/button_stop.js"></script>
+<script src="JS/load_track.js"></script>
+<script src="JS/jouer_sons.js"></script>
+<script src="JS/next_song.js"></script>
+<script src="JS/prev_song.js"></script>
+<script src="JS/random.js"></script>
+<script src="JS/stop_song.js"></script>
+<script src="JS/volume.js"></script>
+<script src="JS/repeatmusic.js"></script>
 
 </html>

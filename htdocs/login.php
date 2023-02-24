@@ -15,7 +15,7 @@ session_start();
         header("Location: TopSons.php");
         exit();
     } else {
-        echo "Invalid username";
+        echo "<div class='erreur'>Invalid username</div>";
     }
 }
 
@@ -28,9 +28,29 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
-    <title>Document</title>
+    <title>Login|Spotizer</title>
 </head>
 <body>
+    
+    <div class="centre-img">
+        <img src="css\images\Spotizer.png" alt="Logo Spotizer" class="logo">
+    </div>
+    
+    <div class="login-card">
+        <h2>Welcome on <span class="fancy">Spotizer</span></h2>
+        <h3>Login</h3>
+        
+        <form method="post" action="login.php" enctype="multipart/form-data" class="login-form">
+            
+            <input type="text" name="connection_user_name" placeholder="Username">
+            <button type="submit">Login</button>
+            
+        </form>
+        
+        <div class="back-to-register">
+            <a href="index.php"><button class="register">Register</button></a>
+        </div>
+    </div>
     
 </body>
 </html>
@@ -42,17 +62,4 @@ session_start();
 <button type="submit">Login</button>
 </form> -->
 
-
-<div class="login-card">
-        <h2>Welcome on <span class="fancy">Spotizer</span></h2>
-        <h3>Login</h3>
-
-        <form method="post" action="login.php" enctype="multipart/form-data" class="login-form">
-
-            <input type="text" name="connection_user_name" placeholder="Username">
-            <button type="submit">Login</button>
-            
-        </form>
-
-    </div>
 
