@@ -269,7 +269,7 @@ body {
 .List::-webkit-scrollbar-thumb
 {
 	background-color: var(--color-1);
-    border: rgb(252, 0, 0);
+    border: rgb(76, 22, 22);
     border-radius: 10px;
 }
 

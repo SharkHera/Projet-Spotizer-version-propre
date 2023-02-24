@@ -10,7 +10,7 @@ function load_track(Index){
     EnCours.innerHTML = Index + 1;
     Timer = setInterval(Range_slider, 1000);
 }
-load_track(Index);
+
 
 // avancer ou reculer le sons avec la slide bar 
 let Bar_Music = document.querySelector("#Bar_Music");

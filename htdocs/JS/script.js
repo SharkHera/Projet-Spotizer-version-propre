@@ -23,93 +23,34 @@ let Music = document.createElement("audio");
 
 // tout les sons de la liste dans un tableau
 
-let Tous_Les_Sons =[
-    //égale au nombre de music 
-    {
-    Nom_Artiste: "Naza",
-    Lien_Music: "audio/Naza - Sac A Dos (Clip Officiel).mp3",
-    Lien_Image: "css/images/carro.jpg",
-    Titre: "Sac A Dos",
+fetch('Songdata.php')
+  .then(response => response.json())
+  .then(data => {
+    Tous_Les_Sons = data.map(row => ({
+      Nom_Artiste: row.Nom_Artiste,
+      Lien_Music: row.Lien_Music,
+      Lien_Image: row.Lien_Image,
+      Titre: row.Titre
+    }))
+    console.log(Tous_Les_Sons);
 
-    },
-    {
-        Nom_Artiste: "Scarface",
-        Lien_Music: "audio/Push It To The Limit (scarface).mp3",
-        Lien_Image: "css/images/carro.jpg",
-        Titre: "Push it to the limit",
-    
-    },
-    {
-        Nom_Artiste: "Lorenzo",
-        Lien_Music: "audio/Coco.mp3",
-        Lien_Image: "css/images/carro.jpg",
-        Titre: "Coco",
-    
-    },
-    {
-        Nom_Artiste: "AmineMaTue",
-        Lien_Music: "audio/Aminematue - España (Reprod by Benji95).mp3",
-        Lien_Image: "css/images/carro.jpg",
-        Titre: "La Roja",
-    
-    },
-    {
-        Nom_Artiste: "JeanJass",
-        Lien_Music: "audio/Un truc.mp3",
-        Lien_Image: "css/images/carro.jpg",
-        Titre: "Un truc",
-    
-    },
-    {
-        Nom_Artiste: "Marco",
-        Lien_Music: "audio/drilledition.mp3",
-        Lien_Image: "css/images/banger.png",
-        Titre: "Banger de Marco 1",
-    },
-    {
-        Nom_Artiste: "Marco",
-        Lien_Music: "audio/drilledition2.mp3",
-        Lien_Image: "css/images/banger2.png",
-        Titre: "Banger de Marco 2 <3",
-    }
-    
-];
+    // Update UI with Tous_Les_Sons data
+    Tous_Les_Sons.forEach((song, index) => {
+      let Titre = document.querySelector(`.Titre${index + 1}`);
+      Titre.innerHTML = song.Titre;
+
+      let Artiste = document.querySelector(`.Artiste${index + 1}`);
+      Artiste.innerHTML = song.Nom_Artiste;
+    });
+    load_track(Index);
+    // Do other things with Tous_Les_Sons
+  })
+  .catch(error => {
+    console.error(error);
+  });
 
 //toutes les fonctions
 
 
 
 //Playlist
-let Titre1 = document.querySelector(".Titre1");
-let Titre2 = document.querySelector(".Titre2");
-let Titre3 = document.querySelector(".Titre3");
-let Titre4 = document.querySelector(".Titre4");
-let Titre5 = document.querySelector(".Titre5");
-let Titre6 = document.querySelector(".Titre6");
-let Titre7 = document.querySelector(".Titre7");
-
-
-Titre1.innerHTML = Tous_Les_Sons[0].Titre;
-Titre2.innerHTML = Tous_Les_Sons[1].Titre;
-Titre3.innerHTML = Tous_Les_Sons[2].Titre;
-Titre4.innerHTML = Tous_Les_Sons[3].Titre;
-Titre5.innerHTML = Tous_Les_Sons[4].Titre;
-Titre6.innerHTML = Tous_Les_Sons[5].Titre;
-Titre7.innerHTML = Tous_Les_Sons[6].Titre;
-
-let Artiste1 = document.querySelector(".Artiste1")
-let Artiste2 = document.querySelector(".Artiste2")
-let Artiste3 = document.querySelector(".Artiste3")
-let Artiste4 = document.querySelector(".Artiste4")
-let Artiste5 = document.querySelector(".Artiste5")
-let Artiste6 = document.querySelector(".Artiste6")
-let Artiste7 = document.querySelector(".Artiste7")
-
-
-Artiste1.innerHTML = Tous_Les_Sons[0].Nom_Artiste;
-Artiste2.innerHTML = Tous_Les_Sons[1].Nom_Artiste;
-Artiste3.innerHTML = Tous_Les_Sons[2].Nom_Artiste;
-Artiste4.innerHTML = Tous_Les_Sons[3].Nom_Artiste;
-Artiste5.innerHTML = Tous_Les_Sons[4].Nom_Artiste;
-Artiste6.innerHTML = Tous_Les_Sons[5].Nom_Artiste;
-Artiste7.innerHTML = Tous_Les_Sons[6].Nom_Artiste;
