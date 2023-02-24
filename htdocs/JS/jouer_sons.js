@@ -20,6 +20,6 @@ function Jouer_sons() {
 function Pause() {
     Music.pause();
     Piece = false;
-    BtnPlay.innerHTML = '<i class="fa-solid fa-pause"></i>';
+    BtnPlay.innerHTML = '<i class="fa-solid fa-play"></i>';
     Eql.classList.remove("Show_Eql");
 }

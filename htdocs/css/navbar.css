@@ -42,25 +42,25 @@ input[type="checkbox"]{
 }
 
 
-.List {
+.list {
     opacity: 1;
     margin-top: 20px;
     border-radius: 10px;
     background: var(--color-2);
     box-shadow: 2px 2px 5px var(--color-4), -2px -2px 5px var(--color-2), 2px -2px 5px var(--color-2), -2px 2px 5px var(--color-2);
     z-index: 1;
-    background-color: rgb(96, 93, 93);
+    background-color: rgb(0, 0, 0);
    overflow-y: hidden;
 }
 
-.List ul {
+.list ul {
     display: flex;
     flex-direction: column;
     gap: 5px;
  }
  
  
- .List ul li {
+ .list ul li {
     display: flex;
     flex-direction: column;
     gap: 1%;
@@ -72,19 +72,19 @@ input[type="checkbox"]{
  }
 
 
-.List::-webkit-scrollbar-track
+.list::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px var(black);
 	background-color: black;
 }
 
-.List::-webkit-scrollbar
+.list::-webkit-scrollbar
 {
 	width: 6px;
 	background-color: black;
 }
 
-.List::-webkit-scrollbar-thumb
+.list::-webkit-scrollbar-thumb
 {
 	background-color: black;
   border: black;

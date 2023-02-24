@@ -62,54 +62,7 @@ include('navbar.html');
         <div class="List_Music">
           <div class="List">
             <ul>
-              <li>
-                <span class="Titre1">Titre</span>
-                <span class="Artiste1">Artiste</span>
-              </li>
-              <li>
-                <span class="Titre2">Titre</span>
-                <span class="Artiste2">Artiste</span>
-              </li>
-              <li>
-                <span class="Titre3">Titre</span>
-                <span class="Artiste3">Artiste</span>
-              </li>
-              <li>
-                <span class="Titre4">Titre</span>
-                <span class="Artiste4">Artiste</span>
-              </li>
-              <li>
-                <span class="Titre5">Titre</span>
-                <span class="Artiste5">Artiste</span>
-              </li>
-              <li>
-                <span class="Titre6">Titre</span>
-                <span class="Artiste6">Artiste</span>
-              </li>
-              <li>
-                <span class="Titre7">Titre</span>
-                <span class="Artiste7">Artiste</span>
-              </li>
-              <li>
-                <span class="Titre1">Titre</span>
-                <span class="Artiste1">Artiste</span>
-              </li>
-              <li>
-                <span class="Titre1">Titre</span>
-                <span class="Artiste1">Artiste</span>
-              </li>
-              <li>
-                <span class="Titre1">Titre</span>
-                <span class="Artiste1">Artiste</span>
-              </li>
-              <li>
-                <span class="Titre1">Titre</span>
-                <span class="Artiste1">Artiste</span>
-              </li>
-              <li>
-                <span class="Titre1">Titre</span>
-                <span class="Artiste1">Artiste</span>
-              </li>
+            
             </ul>
           </div>
         </div>

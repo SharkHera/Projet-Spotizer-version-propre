@@ -35,12 +35,15 @@ fetch('Songdata.php')
     console.log(Tous_Les_Sons);
 
     // Update UI with Tous_Les_Sons data
-    Tous_Les_Sons.forEach((song, index) => {
-      let Titre = document.querySelector(`.Titre${index + 1}`);
-      Titre.innerHTML = song.Titre;
-
-      let Artiste = document.querySelector(`.Artiste${index + 1}`);
-      Artiste.innerHTML = song.Nom_Artiste;
+    // Update UI with Tous_Les_Sons data
+    const ulList = document.querySelector('.List ul');
+    Tous_Les_Sons.forEach(song => {
+      const li = document.createElement('li');
+      li.innerHTML = `
+        <span class="Titre">${song.Titre}</span>
+        <span class="Artiste">${song.Nom_Artiste}</span>
+      `;
+      ulList.appendChild(li);
     });
     load_track(Index);
     // Do other things with Tous_Les_Sons
