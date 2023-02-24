@@ -9,39 +9,43 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
   <title>Spotizer</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="css\favicon\apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="css\favicon\favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="css\favicon\favicon-16x16.png">
+  <link rel="manifest" href="css\favicon\site.webmanifest">
+  <link rel="stylesheet" href="css\navbar.css">
 </head>
 
 <body>
 
 
-  <nav class="navbar navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Spotizer</a>
+      <!-- <input type="color" class="palette-couleur" name="palette-couleur" id="palette-couleur"> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
         aria-controls="offcanvasDarkNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+      <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar"
         aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
             aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body List">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.php">Register</a>
+              <a class="nav-link" aria-current="page" href="index.php">Register</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="login.php">Connexion</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="TopSons.php">Top song</a>
+              <a class="nav-link" href="TopSons.php">All song</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="AllSons.php">All song</a>
-            </li>
+          
             <li class="nav-item">
               <a class="nav-link" href="traitement\deconnexion.php">Deconnexion</a>
             </li>
